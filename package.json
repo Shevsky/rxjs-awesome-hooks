@@ -1,0 +1,57 @@
+{
+  "name": "rxjs-awesome-hooks",
+  "version": "1.0.0",
+  "description": "RxJS Awesome Hooks",
+  "license": "MIT",
+  "author": "Konstantin Shevsky",
+  "main": "dist/index.js",
+  "module": "dist/rxjs-awesome-hooks.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint",
+    "predeploy": "npm run build --prefix playground",
+    "deploy": "gh-pages -d playground/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shevsky/rxjs-awesome-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shevsky/rxjs-awesome-hooks/issues"
+  },
+  "homepage": "https://shevsky.github.io/rxjs-awesome-hooks",
+  "peerDependencies": {
+    "react": ">=16",
+    "rxjs": ">=6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "gh-pages": "^2.1.1",
+    "husky": "^3.0.9",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "rxjs": "^6.5.3",
+    "tsdx": "^0.10.5",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
+  }
+}

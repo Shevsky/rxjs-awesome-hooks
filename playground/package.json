@@ -1,0 +1,31 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html --public-url ./",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "dependencies": {
+    "components": "^0.1.0",
+    "helpers": "^0.0.6",
+    "playground": "^0.7.0",
+    "react-app-polyfill": "^1.0.0",
+    "rxjs-awesome-hooks": "^1.0.0",
+    "stores": "^1.0.0"
+  },
+  "alias": {
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom/profiling",
+    "rxjs": "../node_modules/rxjs",
+    "rxjs-awesome-hooks": "../src/index",
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.15",
+    "@types/react-dom": "^16.8.4",
+    "parcel": "^1.12.3",
+    "typescript": "^3.4.5"
+  }
+}
